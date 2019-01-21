@@ -25,9 +25,12 @@ class Worker
    */
   private $currentlyExecuting;
 
-  public function start($wrapperBinary, $token = 1, $uniqueToken = null)
+  public function start($wrapperBinary, $token = 1, $uniqueToken = null, $fileHandle = null)
   {
-    $this->fileHandle = fopen("paratest-{$token}.log", "wr") or die("Unable to open file: paratest-{$token}.log");
+    if($fileHandle)
+    {
+      $this->fileHandle = $fileHandle;
+    }
     $bin = 'PARATEST=1 ';
     if(is_numeric($token))
     {
