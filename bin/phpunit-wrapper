@@ -22,7 +22,7 @@ while (true) {
     }
     $command = rtrim($command);
     if ($command === 'EXIT') {
-        echo "EXITED\n";
+        echo "ExItEd\n";
         exit($lastExitCode);
     }
     echo "Executing: $command\n";
@@ -33,5 +33,5 @@ while (true) {
     $_SERVER['argv'] = $arguments[1];
 
     $lastExitCode = PHPUnit\TextUI\Command::main(false);
-    echo "FINISHED\n";
+    echo "FiNiShEd\n";
 }
