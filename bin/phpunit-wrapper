@@ -33,5 +33,5 @@ while (true) {
     $_SERVER['argv'] = $arguments[1];
 
     $lastExitCode = PHPUnit\TextUI\Command::main(false);
-    echo "FINISHED\n";
+    echo "FiNiShEd\n";
 }

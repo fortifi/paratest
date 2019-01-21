@@ -75,7 +75,7 @@ class WrapperWorker extends BaseWorker
         $tellsUsItHasFinished = false;
         stream_set_blocking($this->pipes[1], true);
         while ($line = fgets($this->pipes[1])) {
-            if (strstr($line, "FINISHED\n")) {
+            if (strstr($line, "FiNiShEd\n")) {
                 $tellsUsItHasFinished = true;
                 --$this->inExecution;
                 break;
