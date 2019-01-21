@@ -79,8 +79,6 @@ class PHPUnit extends Tester
         if (!isset($runner)) {
             $runner = new Runner($this->getRunnerOptions($input));
         }
-
-        $var = $input->getOption('outputLogs');
         $runner->run();
         return $runner->getExitCode();
     }

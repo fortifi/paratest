@@ -107,6 +107,9 @@ class Options
    */
   protected $annotations = [];
 
+  /**
+   * @var bool
+   */
   protected $outputLogs = false;
 
   public function __construct($opts = [])
@@ -262,6 +265,7 @@ class Options
         'testsuite'       => $this->testsuite,
         'max-batch-size'  => $this->maxBatchSize,
         'filter'          => $this->filter,
+        'outputLogs'      => $this->outputLogs,
       ]
     );
     if($configuration = $this->getConfigurationPath($filtered))
