@@ -7,7 +7,7 @@
     "ext-simplexml": "*",
     "brianium/habitat": "1.0.0",
     "composer/semver": "~1.2",
-    "phpunit/php-timer": "^1.0.4",
+    "phpunit/php-timer": "^1.0.9",
     "phpunit/phpunit": "^6.3",
     "symfony/console": "~2.3|~3.0",
     "symfony/process": "~2.3|~3.0",
