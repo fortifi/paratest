@@ -130,7 +130,7 @@ class Options
     $this->testsuite = $opts['testsuite'];
     $this->maxBatchSize = $opts['max-batch-size'];
     $this->filter = $opts['filter'];
-    $this->outputLogs = $opts['outputLogs'];
+    $this->outputLogs = $opts['outputLogs'] ?? false;
 
     // we need to register that options if they are blank but do not get them as
     // key with null value in $this->filtered as it will create problems for
